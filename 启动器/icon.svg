@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- 底：圆角方形，Steam 深蓝 -->
+  <rect x="8" y="8" width="240" height="240" rx="48" ry="48"
+        fill="#1b2838" stroke="#66c0f4" stroke-width="4"/>
+
+  <!-- 手柄主体：外轮廓 -->
+  <g transform="translate(128, 128)">
+    <!-- 手柄外形（左右把手+中间横条） -->
+    <path d="M -78 -22
+             Q -90 -22 -90 -6
+             Q -90 34 -70 44
+             Q -54 52 -44 34
+             Q -36 20 -22 20
+             L 22 20
+             Q 36 20 44 34
+             Q 54 52 70 44
+             Q 90 34 90 -6
+             Q 90 -22 78 -22
+             Z"
+          fill="#2a475e" stroke="#66c0f4" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- 左：十字方向键 -->
+    <g fill="#c7d5e0">
+      <rect x="-64" y="-8" width="10" height="26" rx="2"/>
+      <rect x="-76" y="4" width="34" height="10" rx="2"/>
+    </g>
+
+    <!-- 右：ABXY 四个按钮 -->
+    <g>
+      <circle cx="56" cy="-2" r="7" fill="#66c0f4"/>
+      <circle cx="70" cy="12" r="7" fill="#c7d5e0"/>
+      <circle cx="56" cy="26" r="7" fill="#8f98a0"/>
+      <circle cx="42" cy="12" r="7" fill="#66c0f4"/>
+    </g>
+
+    <!-- 中间：斜扳手 -->
+    <g transform="rotate(-35)" fill="#66c0f4" stroke="#1b2838" stroke-width="1.5">
+      <!-- 扳手头部（开口） -->
+      <path d="M -6 -34
+               L 6 -34
+               L 6 -22
+               L 12 -22
+               L 12 -14
+               L -12 -14
+               L -12 -22
+               L -6 -22
+               Z"/>
+      <!-- 扳手柄 -->
+      <rect x="-4" y="-14" width="8" height="46" rx="2"/>
+      <!-- 柄尾圆头 -->
+      <circle cx="0" cy="34" r="6"/>
+    </g>
+  </g>
+</svg>
